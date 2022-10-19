@@ -1,1 +1,1 @@
-# SignUp-page-using-HTML-CSS-JS
+# SignUp page using HTML, CSS & JS
