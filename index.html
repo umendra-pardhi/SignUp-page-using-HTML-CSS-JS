@@ -5,20 +5,32 @@
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-        
+    <body>  
         <div class="container">
-            <h2></h2>
-            <form name="signup" id="signup-form" method="post">
+            <h2>SignUp</h2>
+            <div class="line"></div>
+            <form name="signup" id="signup-form"  onsubmit="return validate()" >
+
                 <label for="username">Username</label><br>
-                <input type="text" name="username" id="username" required minlength="4"><br><br>
+                <input type="text" id="username" placeholder="username"  >
+                <p class="error username-error"></p><br>
+
                 <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" required><br><br>
+                <input type="text" id="email" placeholder="example@example.com" >
+                <p class="error email-error"></p><br>
+
                 <label for="password">Password</label><br>
-                <input type="password" name="password" id="password" minlength="8" required><br><br>
+                <input type="password" id="password" placeholder="must be atleast 6 characters"  >
+                <p class="error password-error"></p><br>
+
+                <label for="c_password">Confirm Password</label><br>
+                <input type="password"  id="c_password" placeholder="confirm password"  >
+                <p class="error c_password-error"></p><br>
+
                 <input type="submit" value="SignUp">
             </form>
         </div>
+        
         <script src="js/script.js"></script>
     </body>
 </html>

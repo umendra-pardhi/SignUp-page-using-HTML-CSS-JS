@@ -9,8 +9,6 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* background-image: linear-gradient(135deg, #5151e5 10%, #72edf2 100%); */
     background-image: linear-gradient(135deg, #ff0808 10%, #ff00b3 100%);
 }
 .container{
@@ -21,36 +19,42 @@ body{
 }
 h2{
     text-align: center;
-    margin-bottom: 30px;
+    
+    background: linear-gradient(90deg, #ff00b3 5%,   #ff0808 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-h2::before{
-    content: "Sign";
-    color: #ff0808;
+
+.line{
+    background: linear-gradient(135deg, #ff0808 10%, #ff00b3 100%);
+    padding: 3px;
+    width: 90px;
+    border-radius: 50px;
+    margin: 2px 0 30px 80px;
+    
+    
 }
-h2::after{
-    content: 'Up';
-    color: #ff00b3;
-}
+
 label{
     color:#646464;
 }
 input{
     width: 250px;
     padding: 10px;
-    /* font-weight: bold; */
     border-radius: 5px;
     border: 1px solid #a19e9e;
     font-size: 16px;
     outline: none;
 }
 input:focus {
-    border:2px solid #c202a2 ;
+    border:1px solid #c202a2 ;
     background: #ffff;
 }
+
 input[type='submit']{
     background-image: linear-gradient(135deg, #ff0808 10%, #ff00b3 100%);
     color: white;
-    /* width: 200px; */
     cursor: pointer;
     border: none;
     box-shadow: 0 0 10px rgb(0 0 0 / 0.3);
@@ -59,5 +63,9 @@ input[type='submit']{
 input[type='submit']:hover{
 
     background-image: linear-gradient(135deg, #d30303 10%, #c202a2 100%);
+}
+
+.error{
+    color:red;
 }
 
